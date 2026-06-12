@@ -6,17 +6,19 @@
     "types": "lib/index.d.ts",
     "type": "module",
     "version": "1.0.0",
-    "publisher": "daytonellwanger",
-    "author": "daytonellwanger",
+    "author": {
+        "name": "KTrain5369"
+    },
     "scripts": {
-        "build": "tsc -p ./",
+        "build": "tsdown",
+        "dev": "tsdown --watch",
         "format": "prettier --write",
         "lint": "eslint -p tsconfig.json",
         "prepublishOnly": "npm run lint"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/vsls-contrib/vsls-redux"
+        "url": "https://github.com/VSC-NeuroPilot/vsls-redux"
     },
     "keywords": [
         "Live",
@@ -24,9 +26,9 @@
         "Redux"
     ],
     "bugs": {
-        "url": "https://github.com/vsls-contrib/vsls-redux/issues"
+        "url": "https://github.com/VSC-NeuroPilot/vsls-redux/issues"
     },
-    "homepage": "https://github.com/vsls-contrib/vsls-redux",
+    "homepage": "https://github.com/VSC-NeuroPilot/vsls-redux",
     "dependencies": {
         "redux": "^5.0.1",
         "vsls": "^1.0.4753"
@@ -35,13 +37,14 @@
         "@changesets/cli": "^2.31.0",
         "@eslint/eslintrc": "^3.3.5",
         "@eslint/js": "^10.0.1",
-        "@types/node": "^25.9.3",
+        "@types/node": "^24.13.2",
         "@typescript-eslint/eslint-plugin": "^8.61.0",
         "@typescript-eslint/parser": "^8.61.0",
         "eslint": "^10.4.1",
         "eslint-config-prettier": "^10.1.8",
         "globals": "^17.6.0",
         "prettier": "^3.8.4",
+        "tsdown": "^0.22.2",
         "typescript": "^6.0.3"
     },
     "files": [

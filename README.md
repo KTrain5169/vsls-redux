@@ -1,4 +1,22 @@
-# vsls-redux
+# @vsc-neuropilot/vsls-redux
+
+This is a forked version of [vsls-redux](https://github.com/vsls-contrib/vsls-redux), with changes made to bring the library up to standard with modern extensions.
+
+The current/planned code changes are:
+
+- Upgrading Redux and vsls (and subsequently fixing any issues associated with them)
+- Replace/added some developer tools, as follows:
+    - TSLint -> ESLint + typescript-eslint
+    - tsc -> tsdown
+    - Changelogs with Changesets
+    - Azure Pipelines -> GitHub Actions
+- Publish the library as ESM-only
+
+User-side breaking changes are avoided, providing an easy drop-in replacement.
+
+Credits to [all contributors of the original package](https://github.com/vsls-contrib/vsls-redux/contributors).
+
+## Original README
 
 [![](https://aka.ms/vsls-badge)](https://aka.ms/vsls)
 
