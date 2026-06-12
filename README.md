@@ -16,6 +16,18 @@ The current/planned code changes are:
 
 User-side breaking changes are avoided, providing an easy drop-in replacement.
 
+All new projects should directly use the package name as entrypoint:
+
+```sh
+pnpm add @vsc-neuropilot/vsls-redux
+```
+
+Existing projects can alias this package as the original package:
+
+```sh
+pnpm add vsls-redux@npm:@vsc-neuropilot/vsls-redux
+```
+
 Credits to [all contributors of the original package](https://github.com/vsls-contrib/vsls-redux/contributors).
 
 ## Original README
