@@ -4,6 +4,7 @@ export type State = object | undefined;
 
 export interface ISetInitialStateAction extends Action {
   initialState: State;
+  [key: string]: unknown;
 }
 
 export const SET_INITIAL_STATE_ACTION_NAME = 'vsls-redux.setInitialState';
