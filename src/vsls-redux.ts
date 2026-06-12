@@ -66,7 +66,7 @@ class VSLSRedux {
   }
 
   private async init() {
-    const vslsAPI = await vsls.getApiAsync();
+    const vslsAPI = await vsls.getApi();
     if (vslsAPI) {
       vslsAPI.onDidChangeSession((e: vsls.SessionChangeEvent) => {
         const isSessionEnded = !e.session.id;
