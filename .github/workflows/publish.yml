@@ -1,0 +1,25 @@
+name: Publish to npm
+
+on:
+    push:
+    workflow_dispatch:
+    
+permissions: {}
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+            id-token: write
+        steps:
+            - uses: actions/checkout@v6
+              with:
+                persist-credentials: true
+            
+            - uses: pnpm/action-setup@v6
+            - uses: actions/setup-node@v6
+            - uses: changesets/action@v1.9.0
+              env:
+                NPM_TOKEN: ''
