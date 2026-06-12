@@ -10,10 +10,12 @@
         "sourceMap": true,
         "rootDir": "src",
         "strict": true,
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "isolatedDeclarations": true
     },
     "include": ["src"],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "**/*.config.ts"
     ]
 }

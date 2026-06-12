@@ -13,6 +13,6 @@ export const shareState: (reducer: Reducer) => Reducer = (reducer: Reducer) => {
   };
 };
 
-export const getSharedState = () => {
+export const getSharedState: () => State = () => {
   return sharedState;
 };
